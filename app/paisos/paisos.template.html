@@ -1,0 +1,13 @@
+<h1>Países del mundo</h1>
+<p>
+    Vamos a usar el servicio web llamado "Rest Countries".
+    <a href="https://restcountries.eu/">https://restcountries.eu/</a>
+</p>
+<p>
+    La URL <a href="https://restcountries.eu/rest/v1/all">https://restcountries.eu/rest/v1/all</a> devuelve todos los países del mundo.
+</p>
+<div ng-show="paisos.length == 0">Cargando paises...</div>
+<h2 ng-show="paisos.length">Se encontraron {{paisos.length}} en el mundo</h2>
+<ol>
+    <li ng-repeat="pais in paisos">{{pais.name}} - {{pais.capital}}</li>
+</ol>
