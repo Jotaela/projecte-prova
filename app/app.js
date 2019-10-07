@@ -6,9 +6,10 @@ angular.module('myApp', [
     'home',
     'paisos',
     'cerveza',
-    'ui.router'
-]).
-    config( function ($stateProvider, $urlRouterProvider) {
+    'ui.router',
+    'ngMaterial'
+])
+    .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider.state('home', {
             url: '/home',
             templateUrl: './home/home.template.html',
@@ -28,4 +29,4 @@ angular.module('myApp', [
 
         });
     $urlRouterProvider.otherwise('/home');
-});
+    });
